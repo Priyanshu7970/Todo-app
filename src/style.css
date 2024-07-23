@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ row-gap: 20px;
+}
+input {
+  width: 20vw;
+  height: 3.8vh;
+}
+
+.btn{
+  padding: 8px 30px;
+  background-color: rgba(12, 121, 211, 0.685); 
+  color: white;
+  font-weight: bold;
+}
+.todo-card {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  display: flex; /* Arrange elements horizontally */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align content to the left */
+  width: 300px; /* Adjust width as needed */
+}
+
+.todo-title {
+  margin-bottom: 5px;
+}
+
+.todo-description {
+  flex-grow: 1; /* Allow description to fill remaining space */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Space buttons evenly */
+  margin-top: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+}
+.todos-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
